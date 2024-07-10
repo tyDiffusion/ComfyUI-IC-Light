@@ -20,7 +20,7 @@ class LoadAndApplyICLightUnet:
         return {
             "required": {
                 "model": ("MODEL",),
-                "model_path": (folder_paths.get_filename_list("unet"), )
+                "model_path": (folder_paths.get_filename_list("controlnet"), )
             } 
         }
 
