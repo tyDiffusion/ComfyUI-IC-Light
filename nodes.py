@@ -41,7 +41,7 @@ Used with ICLightConditioning -node
             raise Exception(f"Attempted to load {type_str} model, IC-Light is only compatible with SD 1.5 models.")
 
         print("LoadAndApplyICLightUnet: Checking IC-Light Unet path")
-        model_full_path = folder_paths.get_full_path("unet", model_path)
+        model_full_path = folder_paths.get_full_path("controlnet", model_path)
         if not os.path.exists(model_full_path):
             raise Exception("Invalid model path")
         else:
